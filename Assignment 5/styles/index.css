@@ -1,0 +1,1331 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4f4;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Checkbox Toggle - Hide by default */
+  .menu-toggle-checkbox {
+    display: none;
+  }
+  
+  /* Menu Icon - Hidden by default, shown on mobile */
+  .menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-top: 10px;
+    margin-right: 460px;
+  }
+  
+  /* Links */
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Show nav-links when checkbox is checked */
+  .menu-toggle-checkbox:checked + .menu-icon + .nav-links {
+    display: block;
+    flex-direction: column;
+    background-color: #f8f4f4;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .download {
+    align-items: center;
+    margin-right: 0px;
+    
+  }
+  .learn-more {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .pricing {
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 2px;
+  }
+  .help {
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 2px;
+  }
+  .btn {
+    padding: 8px 15px;
+    text-decoration: none;
+    border: 1px solid rgb(150, 149, 149);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: -5px;
+  }
+  a button.btn:hover {
+    background: #1d21f7;
+    transition: 0.5s;
+  }
+  
+  .style {
+    margin-top: 0px;
+    margin-left: 15px;
+    border: 1px solid rgb(231, 228, 228);
+    width: 866px;
+  }
+  .parent-container {
+    display: flex;
+    grid-template-columns: 200 1fr;
+    gap: 0px;
+  }
+  .child-container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    width: 470px;
+    height: 72vh;
+    margin-top: 40px;
+    margin-left: 155px;
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.459);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-right: 149px;
+    width: 80px;
+    height: 40px;
+  }
+  h1 {
+    display: flex;
+    margin-top: -180px;
+    margin-right: 182px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+  }
+  .style-1 {
+    border: 0.1px solid rgb(243, 243, 243);
+    width: 336px;
+    margin-top: 2px;
+    margin-left: -118px; 
+  }
+  
+  .style-2,
+  .style-3 {
+   border: 0.1px solid rgb(243, 243, 243);
+    width: 324px;
+    margin-top: 18px;
+    margin-left: -18px;
+  }
+  .custom-list {
+    counter-reset: list-counter; /* Reset the counter */
+    list-style: none; /* Remove default numbering */
+    padding-left: 0; /* Remove default padding */
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  .custom-list li {
+    counter-increment: list-counter; /* Increment the counter for each list item */
+    margin-bottom: 13px; /* Add space between items */
+    margin-top: 0px;
+    margin-left: 102px;
+    position: relative;
+    padding-left: 23px; /* Space for the circled number */
+    font-size: 10px;
+  }
+  .custom-list li::before {
+    content: counter(list-counter); /* Display the counter */
+    font-size: 13px; /* Font size for the number */
+    width: 15px;
+    height: 15px;
+    border: 1px solid #423fce; /* Border to create the circle */
+    border-radius: 50%; /* Make it a circle */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0; /* Align the circle to the left */
+    top: 0;
+    color: #3835d6; /* Text color */
+    background-color: #fff; /* Background inside the circle */
+  }
+  
+  .form-row-1 {
+    display: flex;
+    gap: 2px;
+    width: 56%;
+    margin-left: 103px;
+    margin-top: 10px;
+  }
+  .form-row-2 {
+    display: flex;
+    gap: 0px;
+    width: 300px;
+    margin-left: 103px;
+    margin-top: 10px;
+  }
+  
+  .form-row-3 {
+    display: flex;
+    width: 386px;
+    margin-left: 103px;
+    margin-top: 0px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .form-group label {
+    font-size: 0.7vw;
+  }
+  
+  .form-group input {
+    padding: 5px;
+    width: 80%;
+    background-color: rgba(117, 117, 117, 0.144);
+    border: 1px solid rgba(222, 224, 224, 0.555);
+    outline: none;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .form-group #card-number,
+  .spaced-placeholder::placeholder {
+    /* Optionally, line-height for multi-line placeholders in a textarea */
+    margin-left: 0px;
+    word-spacing: 12px;
+  }
+  /* styling of form-group input:hover & styling of form-group select:hover */
+  .form-group input:hover {
+    border: 2px solid rgba(112, 230, 200, 0.555);
+    outline: none;
+  }
+  /* styling class-form-btn */
+  .form-btn {
+    text-align: center;
+    margin-top: 0px;
+  }
+  /* styling of form-btn button */
+  .form-btn button {
+    padding: 8px;
+    width: 260px;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: #19967f;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+  }
+  .submit-btn:hover {
+    background-color: #07b1b1;
+  }
+  .circle-question-mark {
+    display: inline-flex; /* Allows for easy alignment */
+    justify-content: center;
+    align-items: center;
+    width: 15px; /* Fixed width and height to create the circle */
+    height: 15px;
+    margin-top: -10px;
+    margin-left: -185px;
+    border: 1px solid #5654d1; /* Solid border for the circle */
+    border-radius: 50%; /* Makes the shape circular */
+    font-size: 13px; /* Adjust the size of the question mark */
+    color: #515ae6; /* Color of the question mark */
+  }
+  .Need-any-help {
+    display: flex;
+    justify-content: left;
+    margin-top: -15px;
+    margin-left: 25px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #020202;
+    width: 180px;
+    padding-left: 5px;
+  }
+  .dont-hesitate-to {
+    display: flex;
+    justify-content: left;
+    margin-top: -10px;
+    margin-left: 168px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #8b8a8a;
+    width: 180px;
+    padding-left: 5px;
+  }
+  .contact-underlined {
+    display: flex;
+    justify-content: left;
+    margin-top: -9px;
+    margin-left: 288px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #9e9e9e;
+    width: 180px;
+    text-decoration: underline;
+    padding-left: 5px;
+  }
+  .support {
+    display: flex;
+    justify-content: left;
+    margin-top: 3px;
+    margin-left: 26px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #9e9e9e;
+    width: 180px;
+    padding-left: 5px;
+  }
+  .powered-by img {
+    display: flex;
+    justify-content: left;
+    margin-top: 9px;
+    margin-left: 10px;
+    width: 58px;
+    height: 14px;
+    border: 0px;
+    border-radius: 3px;
+  }
+  .has-slidebar { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -137px;
+    width: 10vw;
+    height: 72vh;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(14, 104, 179);
+  }
+  .client-site {
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 0px;
+    
+  }
+  .header-freelancer {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 100px;
+    color: rgb(255, 255, 255);
+  }
+  ul {
+    list-style: none;
+    margin-top: 0px;
+  }
+  .dollar-sign {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 150px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+  
+  .number {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: -98px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+  .year {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-right: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(255, 253, 253);
+  }
+  .automatically-renews {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-right: 60px;
+    margin-top: 20px;
+    margin-left: 4px;
+    width: 100px;
+    font-size: 9px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+  .sites {
+    display: flex;
+    justify-content: center;
+  }
+  .sites svg {
+    margin-top: 10px;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    border-radius: 50%;
+  }
+  .use-on-client-sites {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    color: rgb(255, 251, 251);
+  }
+  .private {
+    display: flex;
+    justify-content: center;
+  }
+  .private svg {
+    margin-top: 6px;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .private-respositories {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+  .Email-support-check {
+    display: flex;
+    justify-content: center;
+  }
+  .Email-support-check svg {
+    margin-top: 10px;
+    margin-left: -47px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+  }
+  .Email-support {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+  .class-need {
+    display: flex;
+    justify-content: center;
+  }
+  .needs {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 72px;
+    font-size: 9px;
+    color: white;
+  }
+  .Switch {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 34px;
+    margin-right: 50px;
+    text-decoration: underline;
+    font-size: 9px;
+    color: white;
+  }
+  .style-4 {
+    border: none;
+    border-bottom: 1px solid rgb(226, 223, 223);
+    width: 125px;
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+  .kirk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .kirk .ftp-is-horrible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 9px;
+    color: white;
+  }
+  .kirk-image img {
+    display: inline-flex; /* allow for a easy alignment */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 25px; /* Fixed width and height to create the circle */
+    height: 25px;
+    border-radius: 80px;
+    margin-left: -52px;
+  }
+  .kirk-beard {
+    display: flex;
+    justify-content: right;
+    width: 180px;
+    margin-top: -22px;
+    margin-left: -159px;
+    font-size: 9px;
+    color: white;
+  }
+  footer {
+   font-size: 8px;
+    margin-left: 330px;
+    margin-top: 10px;
+    color: #979797;
+  }
+   footer a {
+    text-decoration: none;
+    color: #2b82b4;
+   }
+  /* Media query for mobile devices */
+  /* 62.5em =1000px */
+  @media (width < 600px) {
+    .has-slidebar {
+      grid-template-columns: 1fr;
+    }
+   .has-slidebar aside {
+      background: linear-gradient(45deg, #1d21f7 0%, #2d2d2d 100%);
+      color: #382bf0;
+      padding: 1rem;
+    }
+    nav {
+      justify-content: space-between;
+    }
+    .logo {
+      max-width: 100px;
+      height: 50px;
+    }
+    .nav-links {
+      display: none; /* Hide navigation links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      max-width: 100%;
+      background-color: #fff;
+      padding: 8px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links li {
+      margin-top: -5px;
+      padding: 3px;
+     
+    }
+    /* Show nav-links when checkbox is checked */
+    .menu-toggle-checkbox:checked + .menu-icon + .nav-links {
+      display: block;
+      background-color: #fff;
+     
+    }
+  
+  /* Display the menu icon (hamburger) on mobile */
+    .menu-icon {
+      display: block;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+  /* Adjust logo size for smaller screens */
+    .logo img {
+      max-width: 130px;
+      height: 30px;
+    }
+    .download {
+      align-items: center;
+      margin-right: 10px;
+      margin-top: -10px;
+    }
+    .learn-more {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .pricing {
+      align-items: center;
+    }
+    .help {
+      align-items: center;
+    }
+    .btn {
+      padding: 8px 15px;
+      text-decoration: none;
+      border: 1px solid rgb(150, 149, 149);
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 0px;
+      margin-top: 5px;
+    }
+  .style {
+    margin-top: -6px;
+    margin-left: 15px;
+    border: 1px solid rgb(231, 228, 228);
+    width: 766px;
+  }
+   .parent-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    .child-container-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      max-width: 94%;
+      height: 450px;
+      margin-top: 70px;
+      margin-left:12px;
+      padding: 0px;
+      background-color: #ffffff;
+      border-radius: 0px 5px 5px 0px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.459);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 360px;
+      margin-right: 30px;
+      width: 80px;
+      height: 40px;
+    }
+    h1 {
+      display: flex;
+      margin-top: -360px;
+      margin-right: 172px;
+      font-size: 20px;
+      font-weight: 800;
+      color: #333;
+    }
+   
+    .style-1 {
+      border: 0.1px solid rgb(243, 243, 243);
+      width: 300px;
+      margin-top: 2px;
+      margin-left: -105px;
+    }
+    .style-2,
+    .style-3 {
+      border: 0.1px solid rgb(243, 243, 243);
+      max-width: 100%;
+      margin-top: 18px;
+      margin-left: -5px;
+    }
+    .custom-list {
+      counter-reset: list-counter; /* Reset the counter */
+      list-style: none; /* Remove default numbering */
+      padding-left: 0; /* Remove default padding */
+      margin-top: 18px;
+      margin-left: 70px;
+    }
+    .custom-list li {
+      counter-increment: list-counter; /* Increment the counter for each list item */
+      margin-bottom: 13px; /* Add space between items */
+      margin-top: 0px;
+      margin-left: 2px;
+      position: relative;
+      padding-left: 23px; /* Space for the circled number */
+      font-size: 13px;
+    }
+    .custom-list li::before {
+      content: counter(list-counter); /* Display the counter */
+      font-size: 13px; /* Font size for the number */
+      width: 15px;
+      height: 15px;
+      border: 1px solid #423fce; /* Border to create the circle */
+      border-radius: 50%; /* Make it a circle */
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0; /* Align the circle to the left */
+      top: 0;
+      color: #3835d6; /* Text color */
+      background-color: #fff; /* Background inside the circle */
+    }
+    .form-row-1 {
+      display: flex;
+      gap: 2px;
+      max-width: 300px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .form-row-2 {
+      display: flex;
+      gap: 0px;
+      max-width: 210px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .form-row-3 {
+      display: flex;
+      width: 350px;
+      margin-left: 0px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    .form-group label {
+      font-size: 2.9vw;
+    }
+    .form-group input {
+      padding: 5px;
+      width: 80%;
+      background-color: rgba(117, 117, 117, 0.144);
+      border: 1px solid rgba(222, 224, 224, 0.555);
+      outline: none;
+      font-size: 14px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .form-group #card-number,
+    .spaced-placeholder::placeholder {
+      /* Optionally, line-height for multi-line placeholders in a textarea */
+      margin-left: 0px;
+      word-spacing: 12px;
+    }
+    /* styling of form-group input:hover & styling of form-group select:hover */
+    .form-group input:hover {
+      border: 2px solid rgba(112, 230, 200, 0.555);
+      outline: none;
+    }
+    /* styling class-form-btn */
+    .form-btn {
+      text-align: center;
+      margin-top: 0px;
+    }
+    /* styling of form-btn button */
+    .form-btn button {
+      padding: 8px;
+      max-width: 260px;
+      margin-left: -85px;
+      margin-top: 10px;
+      background-color: #19967f;
+      border: none;
+      border-radius: 5px;
+      font-size: 12px;
+      color: #fff;
+    }
+    .submit-btn:hover {
+      background-color: #07b1b1;
+    }
+    .circle-question-mark {
+      display: inline-flex; /* Allows for easy alignment */
+      justify-content: center;
+      align-items: center;
+      width: 15px; /* Fixed width and height to create the circle */
+      height: 15px;
+    }
+    .Need-any-help {
+      display: flex;
+      justify-content: left;
+      margin-top: -15px;
+      margin-left: 25px;
+      font-size: 12px;
+    }
+    .dont-hesitate-to {
+      display: flex;
+      justify-content: left;
+      margin-top: -12px;
+      margin-left: 198px;
+      font-size: 12px;
+    }
+    .contact-underlined {
+      display: flex;
+      justify-content: left;
+      margin-top: -14px;
+      margin-left: 378px;
+      font-size: 12px;
+    }
+    .support {
+      display: flex;
+      justify-content: left;
+      margin-top: 1px;
+      margin-left: 26px;
+      font-size: 12px;
+    }
+  .has-slidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px;
+      margin-left: 11px;
+      width: 94vw;
+      height: 60vh;
+    }
+    .client-site {
+      align-items: center;
+      margin-top: 70px;
+      margin-left: 0px;
+    }
+    .header-freelancer {
+      display: flex;
+      justify-content: center;
+      margin-top: -80px;
+      margin-right: 30px;
+      font-size: 18px;
+      font-weight: 100px;
+      color: rgb(255, 255, 255);
+    }
+    ul {
+      list-style: none;
+      margin-top: 0px;
+    }
+    .dollar-sign {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-right: 150px;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+    }
+    .number {
+      display: flex;
+      justify-content: center;
+     
+    }
+    .year {
+      display: flex;
+      justify-content: center;
+    }
+    .automatically-renews {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .sites {
+      display: flex;
+      justify-content: center;
+    }
+    .sites svg {
+      width: 20px;
+      height: 20px;
+    }
+    .use-on-client-sites {
+      display: flex;
+      justify-content: center;
+    }
+    .private {
+      display: flex;
+      justify-content: center;
+    }
+    .private svg {
+      width: 20px;
+      height: 20px;
+    }
+    .Email-support-check {
+      display: flex;
+      justify-content: center;
+    }
+    .Email-support-check svg {
+      width: 20px;
+      height: 20px;
+    }
+    .class-need {
+      display: flex;
+      justify-content: center;
+    }
+    .needs {
+      display: flex;
+      justify-content: center;
+    }
+    .Switch {
+      display: flex;
+      justify-content: center;
+    }
+    .style-4 {
+      border: none;
+      border-bottom: 1px solid rgb(226, 223, 223);
+      width: 125px;
+      margin-top: 10px;
+      margin-left: 135px;
+    }
+    .kirk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .kirk .ftp-is-horrible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .kirk-image img {
+      display: inline-flex; /* allow for a easy alignment */
+      justify-content: center;
+      align-items: center;
+    }
+    .kirk-beard {
+      display: flex;
+      justify-content: right;
+    }
+    footer {
+      font-size: 13px;
+      margin-left: 100px;
+      margin-top: 10px;
+      color: #979797;
+    }
+    footer a {
+      text-decoration: none;
+      color: #2b82b4;
+    }
+  }
+  /* Media query for tablet devices */
+  @media (width > 700px) and (width: 1024px) {
+
+    .has-slidebar {
+      grid-template-columns: 1fr;
+    }
+   .has-slidebar aside {
+      background: linear-gradient(45deg, #1d21f7 0%, #2d2d2d 100%);
+      color: #382bf0;
+      padding: 1rem;
+    }
+    nav {
+      justify-content: space-between;
+    }
+    .nav-links {
+      display: none; /* Hide navigation links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      max-width: 100%;
+    }
+    .nav-links li {
+      margin-top: -3px;
+      padding: 5px;
+      font-size: 20px;
+     
+    }
+    /* Show nav-links when checkbox is checked */
+    .menu-toggle-checkbox:checked + .menu-icon + .nav-links {
+      display: block;
+      background-color: #fff;
+     
+    }
+  
+  /* Display the menu icon (hamburger) on mobile */
+    .menu-icon {
+      display: block;
+      margin-right: 10px;
+      margin-top: 5px;
+      font-size: 50px;
+    }
+  /* Adjust logo size for smaller screens */
+    .logo img {
+      width: 22vw;
+      height: 5vh;
+      margin-top: -10px;
+    }
+    .download {
+      align-items: center;
+      margin-right: 10px;
+      margin-top: -10px;
+    }
+    .learn-more {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .pricing {
+      align-items: center;
+    }
+    .help {
+      align-items: center;
+    }
+    .btn {
+      padding: 10px 15px;
+      text-decoration: none;
+      border: 1px solid rgb(150, 149, 149);
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 0px;
+      margin-top: 5px;
+    }
+  .style {
+    margin-top: -6px;
+    margin-left: 15px;
+    border: 1px solid rgb(231, 228, 228);
+    width: 766px;
+  }
+   .parent-container {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      height: 120vh;
+    }
+    .child-container-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      width: 74vw;
+      height: 150vh;
+      margin-top: 75px;
+      margin-left: 125px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 360px;
+      margin-right: 30px;
+      width: 80px;
+      height: 40px;
+    }
+    h1 {
+      display: flex;
+      margin-top: -360px;
+      margin-right: 172px;
+      font-size: 20px;
+      font-weight: 800;
+      color: #333;
+    }
+   
+    .style-1 {
+      border: 0.1px solid rgb(243, 243, 243);
+      width: 300px;
+      margin-top: 2px;
+      margin-left: -105px;
+    }
+    .style-2,
+    .style-3 {
+      border: 0.1px solid rgb(243, 243, 243);
+      max-width: 100%;
+      margin-top: 18px;
+      margin-left: -5px;
+    }
+    .custom-list {
+      counter-reset: list-counter; /* Reset the counter */
+      list-style: none; /* Remove default numbering */
+      padding-left: 0; /* Remove default padding */
+      margin-top: 18px;
+      margin-left: 70px;
+    }
+    .custom-list li {
+      counter-increment: list-counter; /* Increment the counter for each list item */
+      margin-bottom: 13px; /* Add space between items */
+      margin-top: 0px;
+      margin-left: 2px;
+      position: relative;
+      padding-left: 23px; /* Space for the circled number */
+      font-size: 13px;
+    }
+    .custom-list li::before {
+      content: counter(list-counter); /* Display the counter */
+      font-size: 15px; /* Font size for the number */
+      width: 15px;
+      height: 15px;
+      border: 1px solid #423fce; /* Border to create the circle */
+      border-radius: 50%; /* Make it a circle */
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+     
+    }
+    .form-row-1 {
+      display: flex;
+      gap: 2px;
+      max-width: 300px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .form-row-2 {
+      display: flex;
+      gap: 0px;
+      max-width: 210px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .form-row-3 {
+      display: flex;
+      width: 350px;
+      margin-left: 0px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    .form-group label {
+      font-size: 2vw;
+    }
+    .form-group input {
+      padding: 5px;
+      width: 80%;
+      background-color: rgba(117, 117, 117, 0.144);
+      border: 1px solid rgba(222, 224, 224, 0.555);
+      outline: none;
+      font-size: 14px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .form-group #card-number,
+    .spaced-placeholder::placeholder {
+      /* Optionally, line-height for multi-line placeholders in a textarea */
+      margin-left: 0px;
+      word-spacing: 12px;
+    }
+    /* styling of form-group input:hover & styling of form-group select:hover */
+    .form-group input:hover {
+      border: 2px solid rgba(112, 230, 200, 0.555);
+      outline: none;
+    }
+    /* styling class-form-btn */
+    .form-btn {
+      text-align: center;
+      margin-top: 0px;
+    }
+    /* styling of form-btn button */
+    .form-btn button {
+      padding: 8px;
+      max-width: 260px;
+      margin-left: -85px;
+      margin-top: 10px;
+      background-color: #19967f;
+      
+    }
+    .submit-btn:hover {
+      background-color: #07b1b1;
+    }
+    .circle-question-mark {
+      display: inline-flex; /* Allows for easy alignment */
+      justify-content: center;
+      align-items: center;
+      width: 15px; /* Fixed width and height to create the circle */
+      height: 15px;
+    }
+    .Need-any-help {
+      display: flex;
+      justify-content: left;
+      margin-top: -15px;
+      margin-left: 25px;
+      font-size: 12px;
+    }
+    .dont-hesitate-to {
+      display: flex;
+      justify-content: left;
+      margin-top: -12px;
+      margin-left: 198px;
+      font-size: 12px;
+    }
+    .contact-underlined {
+      display: flex;
+      justify-content: left;
+      margin-top: -14px;
+      margin-left: 378px;
+      font-size: 12px;
+    }
+    .support {
+      display: flex;
+      justify-content: left;
+      margin-top: 1px;
+      margin-left: 26px;
+      font-size: 12px;
+    }
+  .has-slidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px;
+      margin-left: 125px;
+      width: 74vw;
+      height: 170vh;
+    }
+    .client-site {
+      align-items: center;
+      margin-top: 70px;
+      margin-left: 0px;
+    }
+    .header-freelancer {
+      display: flex;
+      justify-content: center;
+      margin-top: -80px;
+      margin-left: 45px;
+      font-size: 25px;
+    }
+    ul {
+      list-style: none;
+      margin-top: 0px;
+    }
+    .dollar-sign {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-right: 140px;
+      font-size: 20px;
+      
+    }
+    .number {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .year {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .automatically-renews {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    .sites {
+      display: flex;
+      justify-content: center;
+    }
+    .sites svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 38px;
+    }
+    .use-on-client-sites {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+    .private {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .private svg {
+      width: 20px;
+      height: 20px;
+    }
+    .Email-support-check {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .Email-support-check svg {
+      width: 20px;
+      height: 20px;
+    }
+    .class-need {
+      display: flex;
+      justify-content: center;
+      font-size: 25px
+    }
+    .needs {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      margin-left: 125px;
+    }
+    .Switch {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      margin-left: 125px;
+    }
+    .style-4 {
+     width: 125px;
+      margin-top: 10px;
+      margin-left: 295px;
+    }
+    .kirk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .kirk .ftp-is-horrible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+    .kirk-image img {
+      display: inline-flex; /* allow for a easy alignment */
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+    }
+    .kirk-beard {
+      display: flex;
+      justify-content: right;
+      font-size: 20px;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+    footer {
+      font-size: 15px;
+      margin-left: 265px;
+      margin-top: 10px;
+      color: #979797;
+    }
+    footer a {
+      text-decoration: none;
+      color: #2b82b4;
+    }
+  }

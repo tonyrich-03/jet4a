@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup page</title>
+    <!--link external css-->
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+   <body>
+    <a href="../Assignment 5/index.html">Assignment 5</a>
+    <div class="container">
+      <div class="text-image">
+        <span class="individual">
+          <img
+            src="./image/img-logo.png"
+             alt="individual"
+            class="individual"
+          />
+        </span>
+        <p class="class-for-individuals">
+          For Individuals
+        </p>
+        <p class="class-1">
+          looking on increasing productivity, and improving organization
+          wellness.
+        </p>
+      </div>
+      <div class="signup-page-container">
+        <form>
+          <div class="form-row-1">
+           <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="last name"
+                placeholder="Tolu"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder=""
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="Gender" required>
+                <option value="">Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="icon">Date of Birth</label>
+              <input
+                type="date"
+                id="icon"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row-3">
+            <div class="form-group">
+              <label for="Weight">Weight(KG)</label>
+              <input
+                type="number" name="weight"
+                id="weight"
+                placeholder="Enter Weight" min="1" max="300" step="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="height">Height(CM)</label>
+              <input
+                type="number" name="height"
+                id="height"
+                placeholder="Enter height here.." min="1" max="300" step="1"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row-4">
+            <div class="form-group2">
+              <label for="activity_level">Activity Level</label>
+              <select id="Activity" name="Activity level" class="Activity" required>
+               <option>Select here</option>
+               <option>Low</option>
+               <option>Medium</option>
+               <option>High</option>
+             </select>
+           </div>
+          </div>
+          <div class="form-row-5">
+            <div class="form-group2">
+             <label for="password">Password
+               <input
+                 type="password"
+                 id="password"
+                 class="password-input"
+                  placeholder="" required
+                />
+              </label>
+            </div>
+          </div>
+          <div class="class-form-btn">
+            <button type="submit" class="submit-btn">
+              Register 
+            </button>
+          </div>
+          <div class="class-terms">
+            <p>
+              By clicking Register, you agree to our
+              <a href="https://altschoolafrica.com/terms-and-conditions">Terms of Use</a>
+              and our
+              <a href="https://altschoolafrica.com/privacy-policy" >Privacy Policy</a>.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    </body>
+</html>
